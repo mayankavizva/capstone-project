@@ -9,7 +9,6 @@ import "../Cards/Cards.css";
 export default function ImgMediaCard() {
     
     return (
-        <div>
             <div className="cards">
                 <Card sx={{ maxWidth: 300 }} className="innerDiv">
 
@@ -99,6 +98,5 @@ export default function ImgMediaCard() {
 
                 </Card>
             </div>
-        </div>
     );
 }
