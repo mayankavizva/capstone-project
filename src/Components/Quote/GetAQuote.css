@@ -1,0 +1,89 @@
+.quote_form h1{
+    font-weight:bold;
+    font-size: 22px ;
+    text-align: left;
+    color: #8b8b8b;
+    margin: 0 0 .5vh 0;
+}
+.quote_form h3{
+    font-weight:bold;
+    font-size: 18px ;
+    text-align: left;
+    color: #8b8b8b;
+    margin: 0 0 .5vh 0;
+}
+.quote_form h4{
+    font-weight:bold;
+    font-size: 16px ;
+    text-align: left;
+    color: #8b8b8b;
+    margin: 0 0 .5vh 0;
+}
+.quote_form header2{
+    font-weight:bold;
+    font-size: 20px ;
+    text-align: left;
+    color: #8b8b8b;
+    margin: 0 0 .5vh 0;
+}
+.quote_form{
+    min-width: 100%;
+    width:600px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 5px;
+    margin: 0vw;
+    padding: 1vw ;
+    background-color: rgb(29, 29, 31);
+}
+
+.label_form label{
+    color:rgb(2, 2, 2); 
+    font-size:16px;
+}
+.label_form input{
+    font-size:10px;
+    /* padding: .5rem .8rem .5rem .8rem; */
+    /*border:0;
+    border-radius: 5px; */
+    font-size: 20px;
+}
+.quote_form button{
+    border: 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+    height: 2rem;
+    color: rgb(124, 202, 221);
+    float: bottom;
+right:    0;
+bottom:   0;
+    margin-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:auto;
+ justify-content: flex-end;
+/*  display: flex;
+  align-self: baseline; */
+}
+.quote_form button:hover{
+    color:slategray;
+
+}
+#content_part1{
+   width: 40%;
+   /* margin: 5% 10%; */
+   margin-left: 34%;
+}
+#content_part2{
+    width: 40%;
+   /* margin: 5% 10%; */
+   margin-left: 34%;
+}
+#content_part3{
+    width: 40%;
+   /* margin: 5% 10%; */
+   margin-left: 34%;
+}
+#content_part4{
+    width: 40%;
+   /* margin: 5% 10%; */
+   margin-left: 34%;
+}

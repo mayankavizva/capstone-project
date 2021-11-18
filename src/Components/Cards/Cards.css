@@ -1,0 +1,25 @@
+.cards{
+    /* display:flex;
+    justify-content: space-around;
+    flex-direction: row; */
+
+
+    /* max-width: 50%; 
+    justify-content: center;
+    align-content: center;
+    flex-flow: row; */
+    /* display: inline-block; */
+    /* width:100%; */
+}
+.cards .innerDiv{
+   display: inline-block;
+   width: 35%;
+   height: 400px;
+   /* margin: 5% 10%; */
+   margin-right: 20%;
+}
+
+.bt:hover{
+    display: block;
+    color: rgb(112, 157, 163);
+}
