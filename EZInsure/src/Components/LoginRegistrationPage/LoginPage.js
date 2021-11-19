@@ -71,7 +71,7 @@ const LoginPage = ({setIsLogin,userDetails}) => {
               component="form"
               onSubmit={handleSubmit}
               noValidate
-              sx={{ mt: 1 }}
+              sx={{ mt: 5 }}
             >
               <TextField
                 margin="normal" required fullWidth id="email" label="Email Address" name="email" autoComplete="email"

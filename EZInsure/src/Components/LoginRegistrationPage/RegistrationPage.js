@@ -165,7 +165,6 @@ const RegistrationPage = () => {
   };
 
   //HandleChange Function
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputData({ ...inputData, [name]: value });

@@ -1,0 +1,9 @@
+textarea::placeholder {
+  font-family: "Times New Roman";
+  font-size: 50px;
+}
+
+textarea::placeholder {
+    font-family: "Times New Roman";
+    font-size: 50px;
+  }

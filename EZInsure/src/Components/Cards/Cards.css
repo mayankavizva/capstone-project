@@ -1,25 +1,20 @@
-.cards{
-    /* display:flex;
-    justify-content: space-around;
-    flex-direction: row; */
-
-
-    /* max-width: 50%; 
-    justify-content: center;
-    align-content: center;
-    flex-flow: row; */
-    /* display: inline-block; */
-    /* width:100%; */
+.cards {
+  margin: 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.cards .innerDiv{
-   display: inline-block;
-   width: 35%;
-   height: 400px;
-   /* margin: 5% 10%; */
-   margin-right: 20%;
+.css-1xez8po-MuiPaper-root-MuiCard-root.innerDiv {
+  display: inline-block;
+  width: 35%;
+  height: 400px;
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.bt:hover{
-    display: block;
-    color: rgb(112, 157, 163);
+.bt:hover {
+  display: block;
+  color: rgb(112, 157, 163);
 }
