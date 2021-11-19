@@ -1,0 +1,17 @@
+
+.container{
+    width: 100%;
+    /* background-image: url(""); */
+   
+    /* background-size: cover; */
+  
+    background-attachment: fixed;
+    background-color:#F3F1F5;
+  
+  }
+   .bannerContainer{
+     width: 100%;
+    display: flex;
+    
+   }
+  
