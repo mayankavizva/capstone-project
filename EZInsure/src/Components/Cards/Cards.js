@@ -11,10 +11,10 @@ export default function ImgMediaCard() {
     <div className="cards">
       <Card sx={{ maxWidth: 300 }} className="innerDiv">
         <div>
-          <CardMedia component="img" alt="" height="140" image="" />
+          <CardMedia  ><img src="images/bikeImg.png" alt="Loading" height="140"/></CardMedia>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Startup
+              Bike Insurance
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Just starting out? Get all the startup insurance coverage your
@@ -31,12 +31,12 @@ export default function ImgMediaCard() {
       <Card sx={{ maxWidth: 300 }} className="innerDiv">
         <div>
           <div>
-            <CardMedia component="img" alt="" height="140" image="" />
+          <CardMedia  ><img src="images/carImg.png" alt="Loading" height="140"/></CardMedia>
           </div>
 
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Growth Stage
+              Car Insurance
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Scaling up? Investment of $50m and above? Our Growth Stage package
@@ -52,10 +52,10 @@ export default function ImgMediaCard() {
       </Card>
       <Card sx={{ maxWidth: 300 }} className="innerDiv">
         <div>
-          <CardMedia component="img" alt="" height="140" image="" />
+        <CardMedia  ><img src="images/third-party-insurance.svg" alt="Loading" height="140"/></CardMedia>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Law
+              Third Party
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Full protection for your practice with A+ rated, best-in-class
@@ -71,10 +71,10 @@ export default function ImgMediaCard() {
       </Card>
       <Card sx={{ maxWidth: 300 }} className="innerDiv">
         <div>
-          <CardMedia component="img" alt="" height="140" image="" />
+        <CardMedia  ><img src="images/insuranceClaim.jpeg" alt="Loading" height="140" width="300"/></CardMedia>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Private Company
+              Claim Insurance
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Haven’t received funding but still need D&O and EPL Insurance? Our

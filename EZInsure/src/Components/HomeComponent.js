@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
   },
   imgRight: {
-    background: `url(${capstone})`,
+    background: 'url(images/insuranceMainImg.svg)',
     backgroundSize: '105% 100%',
     backgroundPosition: 'left',
     width: 400,
@@ -44,7 +44,7 @@ const HomeComponent = () => {
       <div className="inner_content">
         <div className={classes.bannerContainer}>
           <div>
-            <Typography variant={`h2`}>{`Business Insurance`}</Typography>
+            <Typography variant={`h2`}>{`EZInsure`}</Typography>
             <Typography
               variant={`h2`}
               className={classes.contentSubheading}

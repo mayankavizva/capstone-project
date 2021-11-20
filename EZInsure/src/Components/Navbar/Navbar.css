@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0px 150px;
+  padding: 0px 15px;
 }
 .navbar:hover {
   opacity: 1;

@@ -13,9 +13,11 @@ import {
 const ContactUs = () => {
   return (
     <Box m={3} p={3}>
+      <div className="contactHeader"> 
       <Typography variant="overline" fontSize="40px" fontWeight="220">
         Contact us
       </Typography>
+      </div>
       <hr style={{ opacity: '0.4' }} />
       <Box m={3} p={3}>
         <Grid container spacing={10} className="contactForm">
@@ -57,7 +59,7 @@ const ContactUs = () => {
           </Grid>
           <Grid item xs={12} sm={5}>
             <Card
-              style={{ height: 350, width: 550, backgroundColor: '#F0D9FF' }}
+              style={{ height: 350, width: 550, backgroundColor: '#FCD2D1' }}
             >
               <CardContent style={{ textAlign: 'center' }}>
                 <Typography variant="overline" fontSize="25px">
@@ -87,7 +89,7 @@ const ContactUs = () => {
             </Card>
           </Grid>
         </Grid>
-        <Button variant="contained" style={{ backgroundColor: '#F0D9FF' }}>
+        <Button variant="contained" style={{ backgroundColor: '#FF5C58' }}>
           Submit
         </Button>
       </Box>

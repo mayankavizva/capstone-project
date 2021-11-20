@@ -16,6 +16,7 @@ import { Switch, Link } from 'react-router-dom'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import Fade from '@mui/material/Fade'
+import { Typography } from '@mui/material'
 
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -31,11 +32,13 @@ export default function Navbar() {
     <div className="navbar">
       <div className="left-box">
         <ul>
-          <li className="insure">
+          <li>
+          <Typography variant="body1"> 
             <Link to="/home">
-              <span>{` EZInsure`}</span>
+              EZInsure
             </Link>
-          </li>
+            </Typography>
+            </li>
 
           <li>
             <a href="#">
@@ -65,32 +68,31 @@ export default function Navbar() {
             </Menu>
           </li>
           <li>
-            <a href="#">
-              <FaHandshake />
-              {` SERVICES`}
-            </a>
-          </li>
-          <Link to="/contactus">
-            <li>
-              <a href="#">
-                <FaAddressBook />
-                {` CONTACT`}
-              </a>
+          <Typography variant="body1"> 
+            <Link to="/home">
+              Services
+            </Link>
+            </Typography>
             </li>
-          </Link>
+            <li>
+          <Typography variant="body1"> 
+            <Link to="/Contactus">
+              Contact
+            </Link>
+            </Typography>
+            </li>
         </ul>
       </div>
       <div className="login_box">
         <ol className="order">
           <li>
             <Link to="/login">
-              <FaSignInAlt />
-              {` LOGIN `}
+             <Button variant="inherit">Login</Button>
             </Link>
           </li>
 
           <li>
-            <Link to="/signup">{` SIGNUP `}</Link>
+            <Link to="/signup"><Button variant="outlined">SignUp</Button></Link>
           </li>
         </ol>
       </div>

@@ -7,3 +7,6 @@ textarea::placeholder {
     font-family: "Times New Roman";
     font-size: 50px;
   }
+  .contactHeader{
+    background-color:#FE8F8F;
+  }

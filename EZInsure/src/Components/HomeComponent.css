@@ -4,13 +4,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #f0d9ff;
+  /* background-color: #f0d9ff; */
+  background-color: #FCD2D1;
   backface-visibility: hidden;
 }
 
 .inner_content {
   margin: 0px 100px;
-  background-color: #f0d9ff;
+  background-color: #FCD2D1;
   padding: 20px 0;
 }
 /* .image img {
@@ -25,7 +26,7 @@
 }
 .getAQuoteBtn {
   color: white;
-  background-color: violet;
+  background-color: #FF5C58;
   text-decoration: none;
   line-height: 1.75;
   text-transform: uppercase;
