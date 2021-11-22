@@ -109,8 +109,7 @@
 }
 
 .navbar .login_box button:hover {
-  transform: scale(0.9);
-  background: rgb(168, 210, 221);
+  transform: scale(1.1);
   color: rgb(0, 0, 0);
   cursor: pointer;
 }
@@ -118,7 +117,7 @@
 .login_box ol li {
   padding-bottom: 10px;
   color: rgb(8, 6, 6);
-  cursor: pointer;
+  /* cursor:no-drop; */
   margin: auto 0;
   font-size: 17px;
   font-weight: 550;
@@ -126,7 +125,7 @@
 }
 .login_box ol li:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.1);
   border-radius: 5px;
   border-bottom: 0.5px solid black;
 }

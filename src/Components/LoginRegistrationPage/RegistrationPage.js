@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 // import "./RegistrationPage.css";
+import Paper from '@mui/material/Paper';
 import Avatar from "@mui/material/Avatar";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
@@ -16,22 +17,19 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { IconButton, InputAdornment } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-// const RegistrationPage = ({ handleClose }) => {
-//     const [UserRegister, setUserRegister] = useState({
-//         email: "",
-//         fullname: "",
-//         password: "",
-//         phone: ""
-//     });
-//     const handleInput = (e) => {
-//         const name = e.target.name;
-//         const value = e.target.value;
-//         setUserRegister({ ...UserRegister, [name]: value })
-//     }
-//     const handleSubmit = (e) => {
-//         e.preventDefault();
-//         handleClose();
-//     }
+
+function Copyright(props) {
+  return (
+    <Typography variant="body2" color="text.secondary" align="left" {...props}>
+      {'Copyright © '}
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const theme = createTheme();
 
@@ -160,7 +158,7 @@ const RegistrationPage = () => {
       );
     } else {
       console.log(dataObj, "line139");
-      localStorage.setItem("userDetail",JSON.stringify(dataObj));
+      localStorage.setItem("userDetail", JSON.stringify(dataObj));
     }
   };
 
@@ -178,178 +176,195 @@ const RegistrationPage = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
-        <Box
+        <Grid
+          item
+          xs={false}
+          sm={4}
+          md={6}
           sx={{
-            marginTop: 8,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            backgroundImage: 'url(https://source.unsplash.com/random)',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: (t) =>
+              t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            {/* {/ <LockOutlinedIcon /> /} */}
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign up
-          </Typography>
+        />
+        <Grid item xs={12} sm={8} md={6} component={Paper} elevation={6} square>
           <Box
-            component="form"
-            noValidate
-            onSubmit={handleSubmit}
-            sx={{ mt: 3 }}
+            sx={{
+              marginTop: 8,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
           >
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  autoComplete="fname"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="First Name"
-                  autoFocus
-                  defaultValue={inputData.firstName}
-                  onChange={handleChange}
-                  InputProps={{}}
-                  helperText={errorData.firstName}
-                  error={errorData.firstName !== ""}
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  autoComplete="lname"
-                  defaultValue={inputData.lastName}
-                  onChange={handleChange}
-                  helperText={errorData.lastName}
-                  error={errorData.lastName !== ""}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="phone"
-                  label="Phone Number"
-                  name="number"
-                  autoComplete="number"
-                  defaultValue={inputData.number}
-                  onChange={handleChange}
-                  helperText={errorData.number}
-                  error={errorData.number !== ""}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
-                  defaultValue={inputData.email}
-                  onChange={handleChange}
-                  error={errorData.email !== ""}
-                  helperText={errorData.email}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type={showPassword}
-                  id="password"
-                  autoComplete="new-password"
-                  defaultValue={inputData.password}
-                  onChange={handleChange}
-                  InputProps={{
-                    endAdornment: (
-                      <InputAdornment position="end">
-                        <IconButton
-                          aria-label="toggle password visibility"
-                          onClick={handleClickShowPassword}
-                          edge="end"
-                        >
-                          {showPassword === "text" ? (
-                            <VisibilityOff />
-                          ) : (
-                            <Visibility />
-                          )}
-                        </IconButton>
-                      </InputAdornment>
-                    ),
-                  }}
-                  helperText={errorData.password}
-                  error={errorData.password !== ""}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="cnfPassword"
-                  label="Confirm Password"
-                  type="password"
-                  id="cnfPassword"
-                  autoComplete="new-password"
-                  defaultValue={inputData.cnfPassword}
-                  onChange={handleChange}
-                  InputProps={{
-                    endAdornment: (
-                      <InputAdornment position="end">
-                        <IconButton
-                          aria-label="toggle password visibility"
-                          onClick={handleClickShowPassword}
-                          edge="end"
-                        >
-                          {inputData.password === inputData.cnfPassword ? (
-                            <CheckCircleOutlineIcon />
-                          ) : null}
-                        </IconButton>
-                      </InputAdornment>
-                    ),
-                  }}
-                  helperText={errorData.cnfPassword}
-                  error={errorData.cnfPassword !== ""}
-                />
-              </Grid>
-
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox value="allowExtraEmails" color="primary" />
-                  }
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid>
-            </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-              style={{ backgroundColor: "#00ADB5" }}
+            <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+              {/* {/ <LockOutlinedIcon /> /} */}
+            </Avatar>
+            <Typography component="h1" variant="h5">
+              Sign up
+            </Typography>
+            <Box
+              component="form"
+              noValidate
+              onSubmit={handleSubmit}
+              sx={{ mt: 3 }}
             >
-              Sign Up
-            </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="/login" variant="body2">
-                  Already have an account? Sign in
-                </Link>
+              <Grid container spacing={2} padding={2}>
+                <Grid item xs={12} sm={6} >
+                  <TextField
+                    autoComplete="fname"
+                    name="firstName"
+                    required
+                    fullWidth
+                    id="firstName"
+                    label="First Name"
+                    autoFocus
+                    defaultValue={inputData.firstName}
+                    onChange={handleChange}
+                    InputProps={{}}
+                    helperText={errorData.firstName}
+                    error={errorData.firstName !== ""}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    required
+                    fullWidth
+                    id="lastName"
+                    label="Last Name"
+                    name="lastName"
+                    autoComplete="lname"
+                    defaultValue={inputData.lastName}
+                    onChange={handleChange}
+                    helperText={errorData.lastName}
+                    error={errorData.lastName !== ""}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    id="phone"
+                    label="Phone Number"
+                    name="number"
+                    autoComplete="number"
+                    defaultValue={inputData.number}
+                    onChange={handleChange}
+                    helperText={errorData.number}
+                    error={errorData.number !== ""}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    id="email"
+                    label="Email Address"
+                    name="email"
+                    autoComplete="email"
+                    defaultValue={inputData.email}
+                    onChange={handleChange}
+                    error={errorData.email !== ""}
+                    helperText={errorData.email}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    name="password"
+                    label="Password"
+                    type={showPassword}
+                    id="password"
+                    autoComplete="new-password"
+                    defaultValue={inputData.password}
+                    onChange={handleChange}
+                    InputProps={{
+                      endAdornment: (
+                        <InputAdornment position="end">
+                          <IconButton
+                            aria-label="toggle password visibility"
+                            onClick={handleClickShowPassword}
+                            edge="end"
+                          >
+                            {showPassword === "text" ? (
+                              <VisibilityOff />
+                            ) : (
+                              <Visibility />
+                            )}
+                          </IconButton>
+                        </InputAdornment>
+                      ),
+                    }}
+                    helperText={errorData.password}
+                    error={errorData.password !== ""}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    name="cnfPassword"
+                    label="Confirm Password"
+                    type="password"
+                    id="cnfPassword"
+                    autoComplete="new-password"
+                    defaultValue={inputData.cnfPassword}
+                    onChange={handleChange}
+                    InputProps={{
+                      endAdornment: (
+                        <InputAdornment position="end">
+                          <IconButton
+                            aria-label="toggle password visibility"
+                            onClick={handleClickShowPassword}
+                            edge="end"
+                          >
+                            {inputData.password === inputData.cnfPassword ? (
+                              <CheckCircleOutlineIcon />
+                            ) : null}
+                          </IconButton>
+                        </InputAdornment>
+                      ),
+                    }}
+                    helperText={errorData.cnfPassword}
+                    error={errorData.cnfPassword !== ""}
+                  />
+                </Grid>
+
+                <Grid item xs={12}>
+                  <FormControlLabel
+                    control={
+                      <Checkbox value="allowExtraEmails" color="primary" />
+                    }
+                    label="I want to receive updates via email."
+                  />
+                </Grid>
               </Grid>
-            </Grid>
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+                style={{ backgroundColor: "#00ADB5" }}
+              >
+                Sign Up
+              </Button>
+              <Grid container justifyContent="flex-end">
+                <Grid item>
+                  <Link href="/login" variant="body2">
+                    Already have an account? Sign in
+                  </Link>
+                </Grid>
+              </Grid>
+              <Copyright sx={{ mt: 5 }} />
+            </Box>
           </Box>
-        </Box>
-      </Container>
+        </Grid>
+      </Grid>
     </ThemeProvider>
   );
 }

@@ -42,7 +42,6 @@ export default function Navbar() {
 
           <li>
             <a href="#">
-              <FaUser />
             </a>
             <Button
               id="fade-button"

@@ -9,6 +9,7 @@ import ContactUs from './ContactUs'
 import GetAQuote from './Quote/GetAQuote'
 import LoginPage from './LoginRegistrationPage/LoginPage'
 import RegistrationPage from './LoginRegistrationPage/RegistrationPage'
+import ForgotPassword from './LoginRegistrationPage/ForgotPassword'
 
 function Component() {
   return (
@@ -23,6 +24,9 @@ function Component() {
       <Switch>
         <Route exact path="/login" component={LoginPage} />
       </Switch>
+      <Switch>
+        <Route exact path="/forgotpassword" component={ForgotPassword} />
+      </Switch>  
       <Switch>
         <Route exact path="/signup" component={RegistrationPage} />
       </Switch>
