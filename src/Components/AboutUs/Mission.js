@@ -5,8 +5,7 @@ export const Mission = () => {
         <div>
             <h1>Mission</h1>
             <p>To help our customers achieve financial prosperity and peace of mind.</p>
-            <h1>Vision</h1>
-            <p>To distinguish EasyInsurance as an admired multinational financial services leader, trusted partner, and provider of innovative solutions for growing and protecting wealth</p>
+            
             <h1>Core Values</h1>
             <p>How we conduct our business is just as important as what we do. Our core values are the principles that guide us daily in helping our customers achieve financial prosperity and peace of mind. At all times, we strive to distinguish EasyInsurance as an admired multinational financial services leader and trusted brand that is differentiated by top talent and innovative solutions for all stages of life.</p>
             <ul>
@@ -18,4 +17,3 @@ export const Mission = () => {
         </div>
     )
 }
-

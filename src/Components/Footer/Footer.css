@@ -5,9 +5,9 @@
   
   .footer .logo{
     position: relative;
-background-color: #BFA2DB;
+background-color:lightgrey;
     height: 20vh;
-    top: 100px;
+    /* top: 100px; */
     /* background: #000; */
     left: 50%;
     transform: translate(-50%);
@@ -15,8 +15,8 @@ background-color: #BFA2DB;
   
   .footer .details{
     text-align: center;
-    position: relative;
-    background-color: #7F7C82;
+    /* position: relative; */
+    background-color: #FFEDD3;
     color: rgb(12, 12, 12);
     height: 20vh;
     top: 100px;

@@ -1,110 +1,136 @@
-.navbar{
-    position:fixed;
-    z-index: 1;
-    width: 100%;
-    background-color: #F3F1F5;
-    opacity: 2;
-    margin: 0;
-    padding: 10px 0;
-    transition: transform 0.2s;
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #f3f1f5;
+  opacity: 2;
+  transition: transform 0.2s;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 15px;
+}
+.navbar:hover {
+  opacity: 1;
+}
+/*leftbox CSS*/
 
-  }
-  .navbar:hover{
-    opacity: 1;
-  }
-  .navbar h1{
-    font-weight: 600;
-    width: 11.25rem;
-    align-self: auto;
-    list-style-type:square;
-    width: 100%;
-    margin: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-transform: uppercase;
-  }
- .navbar ul{
-    list-style-type:square;
-    width: 100%;
-    margin: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+.left-box {
+  width: 60%;
+  height: '100%';
+}
 
-  .navbar ul li{
+.login_box {
+  width: 30%;
+  height: 100%;
+}
 
-    height:5%;
-    display: inline-block;
-    padding: 10px;
-    color: rgb(8, 6, 6);
-    cursor: pointer;
-    margin: auto 0;
-    font-size: 17px;
-    font-weight: 550;
-    /* transition: transform 0.2s; */
-    transition: all 0.5s ease;
-  } 
-  #fade-button{
-    font-size: 17px;
-    font-weight: 550;
-    color: rgb(8, 6, 6);
-    cursor: pointer;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .navbar ul li:hover{
-    /* background: rgb(156, 219, 221); */
-    cursor: pointer;
-    transform: scale(1.05);
-    border-radius: 5px;
-    /* text-decoration: underline; */
-    border-bottom: 0.5px solid black;
-  }
-  
-  .navbar ul li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  } 
-  
-  .navbar .login_box{ 
-    display: inline;
-    padding-top: 50px;
-    padding-right: 50px;
-    position: absolute;
-    right: 0%;
-    top: 0%;
-  }
-  
-  .navbar .login_box button{
-    padding: 10px;
-    font-size: 18px;
-    transition: transform 0.2s;
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .navbar .login_box button:hover{
-    transform: scale(0.9);
-    background: rgb(168, 210, 221);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-  }
-.submenu_1, .submenu_2{
-    display: none;
-  
-  }
-.navbar ul li:hover .submenu_1,.navbar ul li:hover .submenu_2{
-    display: inline-block;
-    left:auto;
-    background-color: rgb(248, 248, 248);
-    color:rgb(0, 0, 0);
-    position: absolute;
-    padding: 10px;
-  }
+.login_box ol {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  list-style: none;
+}
 
-  .dropmenu{
-    padding-left: 5px;
-    color:thistle;
-  }
+.navbar h1 {
+  font-weight: 600;
+  width: 11.25rem;
+  align-self: auto;
+  list-style-type: square;
+  width: 100%;
+  margin: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: uppercase;
+}
+
+.navbar ul li {
+  height: 5%;
+  display: inline-block;
+  padding: 10px;
+  color: rgb(8, 6, 6);
+  cursor: pointer;
+  margin: auto 0;
+  font-size: 17px;
+  font-weight: 550;
+  transition: all 0.5s ease;
+}
+#fade-button {
+  font-size: 17px;
+  font-weight: 550;
+  color: rgb(8, 6, 6);
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar ul li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border-radius: 5px;
+  border-bottom: 0.5px solid black;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.submenu_1,
+.submenu_2 {
+  display: none;
+}
+.navbar ul li:hover .submenu_1,
+.navbar ul li:hover .submenu_2 {
+  display: inline-block;
+  left: auto;
+  background-color: rgb(248, 248, 248);
+  color: rgb(0, 0, 0);
+  position: absolute;
+  padding: 10px;
+}
+
+.dropmenu {
+  padding-left: 5px;
+  color: thistle;
+}
+
+/*Login box css*/
+.login_box {
+}
+
+.navbar .login_box button {
+  padding: 10px;
+  font-size: 18px;
+  transition: transform 0.2s;
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar .login_box button:hover {
+  transform: scale(0.9);
+  background: rgb(168, 210, 221);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.login_box ol li {
+  padding-bottom: 10px;
+  color: rgb(8, 6, 6);
+  cursor: pointer;
+  margin: auto 0;
+  font-size: 17px;
+  font-weight: 550;
+  transition: all 0.5s ease;
+}
+.login_box ol li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border-radius: 5px;
+  border-bottom: 0.5px solid black;
+}
+.login_box ol li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}

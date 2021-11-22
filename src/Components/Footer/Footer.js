@@ -2,6 +2,7 @@ import React from 'react';
 import "../Footer/Footer.css";
 import {
     FaHome,FaTwitter,FaFacebook, FaYoutube, FaLinkedinIn, FaInstagram, FaMailBulk, FaPhone} from "react-icons/fa";
+import { Typography } from '@mui/material';
 export default function Footer() {
     return (
             <footer className="footer">
@@ -18,10 +19,10 @@ export default function Footer() {
             </div>
             <div className="details">
                 <p>
-                    <strong><FaMailBulk /> Email:</strong>
-                    <a href="mailto: ">{` insureyourslef@businessinsurance.com`}</a>
+                    <Typography variant="overline"><FaMailBulk /> Email:</Typography>
+                    <Typography variant="subtitle1"><a href="mailto: ">{` insureyourslef@businessinsurance.com`}</a></Typography>
                 </p>
-                <p><strong><FaPhone />Phone:</strong>{` 98765432`}</p>
+               <Typography variant="overline"><FaPhone />Phone:{` 98765432`}</Typography>
                 <p><strong><FaHome />Address:</strong>{` 255,Bangalore`}</p>
             </div>
         </footer>

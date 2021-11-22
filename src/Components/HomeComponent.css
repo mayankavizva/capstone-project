@@ -1,48 +1,42 @@
-*{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-.container{
-    width: 100%;
-    background-image: url("");
-    background-position:center ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgb(233, 233, 233);
-    backface-visibility:hidden;
-  }
+.div_outer {
+  background-image: url('');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-color: #f0d9ff; */
+  background-color: #FCD2D1;
+  backface-visibility: hidden;
+}
 
-  .inner_content{
-    position: relative;
-    top: 60px;
-    margin: 0px 30px;
-  }
-  .image img{
-    /* position: relative; */
-  
-    width: 400px;
-    height: 400px;
-    float: right;
-    border-radius: 50%;
-  }
-  
+.inner_content {
+  margin: 0px 100px;
+  background-color: #FCD2D1;
+  padding: 20px 0;
+}
+/* .image img {
+  width: 400px;
+  height: 350px;
+  float: right;
+  border-radius: 50%;
+} */
 
-  .list ul li{
-    font-size: 20px;
-  }
-  .list button{
-    color: white;
-    background-color: violet;
-    text-decoration: none;
-    line-height: 1.75;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    border: 1px solid transparent;
-    padding: 10px;
-    border-radius: 50rem;
-  }
-  /* .logo{
+.list ul li {
+  font-size: 20px;
+}
+.getAQuoteBtn {
+  color: white;
+  background-color: #FF5C58;
+  text-decoration: none;
+  line-height: 1.75;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 50rem;
+}
+/* .logo{
     display: flex;
     justify-content: center;
   }
@@ -54,10 +48,7 @@
     overflow: hidden;
     align-self: flex-end;
   } */
-  
-  
-  
-  
-  .inner_content a{
-    color: rgb(18, 172, 146);
-  }
+
+.inner_content a {
+  color: rgb(18, 172, 146);
+}
