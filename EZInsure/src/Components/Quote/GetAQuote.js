@@ -95,28 +95,31 @@ const GetAQuote = ({ handleNext,handleBack}) => {
                 </div>
             </CardContent>}
             {flagTwo && <CardContent id="content_part3">
-            <h1 id="header2">Business Information </h1>
+            <h1 id="header2">Insurance Type</h1><br />
                 <label for="Bop">Type of Insurance:</label><br />
-                <select id="browsers">
+                <select id="browsers" >
                     <option>Business Owner's Policy(BOP)</option>
+                    <option>Individual</option>
                 </select>
                 <br />
-                <label for="date">When did you start your business :</label><br />
+                <br />
+                <label for="date">Purchase of Vehicle :</label><br />
                 <input type="date" id="date" name="date" />
                 <br />
-                <label for="BusinessType">What is the type of your Business?</label>
+                <br />
+                <label for="BusinessType">Type of vehicle</label>
+                <br />
                 <br />
                 <select id="businesstype" name="businesstype">
-                    <option value="range1">IT Solutions</option>
-                    <option value="range2">Software Development</option>
-                    <option value="range3">Construction</option>
-                    <option value="range4">Medical</option>
+                    <option value="range1">2 wheeler(geared)</option>
+                    <option value="range2">2 wheeler(non-geared)</option>
+                    <option value="range3">Four-wheeler</option>
+                    
                 </select>
                 <br />
-                <label for="">No.of Owners : </label><br />
-                <input type="number" />
+              
                 <br />
-                <label for="Building">Do you own a building?</label><br />
+                <label for="Building">Any previous claim</label><br />
                 <input type="radio" value={Quote.business}
                     onChange={handleQuoteInput} name="business" id="business" />
                 <label for="Yes" >Yes</label>
@@ -125,7 +128,7 @@ const GetAQuote = ({ handleNext,handleBack}) => {
                     onChange={handleQuoteInput} name="business" id="business" />
                 <label for="No">No</label>
                 <br />
-
+                <br />
                 <label for="age">Age of your building: </label><br />
                 <select id="age" name="age">
                     <option value="range1">0 to 3 years</option>
@@ -133,34 +136,27 @@ const GetAQuote = ({ handleNext,handleBack}) => {
                     <option value="range3">5 to 10 years</option>
                     <option value="range4">10 to 15 years</option>
                 </select>
-                <br />
+                <br /><br />
                 <button onClick={handleNext2Click}>Next</button>
             </CardContent>}
 
-            {flagThree && <CardContent id="content_part2"><h3>Assets </h3>
-                <h4>Computers</h4>
-                <label for="item_types">No. Of Computers :  </label>
+            {flagThree && <CardContent id="content_part2"><h3>Vehicle Information </h3>
+            <br/>
+            <br/>
+                
+                <label for="item_types">Name of Manufacturer  </label>
+                <input type="text" />
+                <br />
+                <br />
+                <label for="item_types">Model Name  </label>
+                <input type="text" />
+                <br/><br/>
+                <label for="item_types">Model Year  </label>
                 <input type="number" />
                 <br />
+                
                 <br />
-                <label for="item_types">Make Of Computer :  </label>
-                <br />
-                <select id="make" name="make">
-                    <option value="make1">Apple</option>
-                    <option value="make2">HP</option>
-                    <option value="make3">Asus</option>
-                    <option value="make4">Lenovo</option>
-                    <option value="make4">Samsung</option>
-                    <option value="make4">Dell</option>
-                </select>
-                <br />
-                <label for="item_model">Model Of Computer :  </label>
-                <br />
-                <select id="model" name="model">
-                    <option value="model1"></option>
-                </select>
-                <br />
-                <label for="item_age">Age Of Computers :  </label>
+                <label for="item_age">Age Of Vehicle :  </label>
                 <select id="age" name="age">
                     <option value="agerange1">0 to 3 years</option>
                     <option value="agerange2">3 to 5 years</option>
@@ -169,7 +165,7 @@ const GetAQuote = ({ handleNext,handleBack}) => {
                 </select>
                 <br />
                 <br />
-                <h4>Mobile Phones</h4>
+                {/* <h4>Mobile Phones</h4>
                 <label for="item_types">No. Of Mobile Phones :  </label>
                 <input type="number" />
                 <br />
@@ -199,21 +195,22 @@ const GetAQuote = ({ handleNext,handleBack}) => {
                     <option value="range3">5 to 10 years</option>
                     <option value="range4">10 to 15 years</option>
                 </select>
-                <br />
-                <button onClick={handleNext3Click}>Next</button>
+                <br />*/}
+                <button onClick={handleNext3Click}>Next</button> 
             </CardContent>}
             
             {flagFour && <CardContent id="content_part4">
             <h1 id="header4">Insurance Information </h1>
+            <br/><br/>
                 <label for="date">When would you like your coverage to be started:</label><br />
                 <input type="date" id="date" name="date" />
-                <br />
+                <br /><br />
                 <label for="item_age">Risk Covers   </label><br />
                 <select id="types" name="types" >
                     <option value="risk1">Fire</option>
                     <option value="risk2">Theft</option>
                 </select>
-                <br />
+                <br /><br />
                 <button onClick={handleQuoteSubmit}>Submit</button>
             </CardContent>}
         </React.Fragment>
