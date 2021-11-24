@@ -1,0 +1,65 @@
+
+    .loginpage{
+        width: 500px;
+        height: 50vh;
+        border: 1px transparent rgb(0, 0, 0);
+        margin: 0vw;
+        padding: 5vw ;
+        position:relative; 
+        box-shadow: black;
+        background-color: rgb(133, 133, 133);
+    }
+    .loginpage h1{
+        font-weight:bold;
+        font-size: 35px ;
+        text-align: center;
+        color: #000000;
+        margin: 0 0 .5vh 0;
+    }
+    .box1{
+        size: 200px;
+        float: left;
+    }
+    .Text_field{
+        padding-bottom: 5px;
+        float: left;
+        direction: ltr;
+    }
+    /* .label label{
+        display:block;
+    margin: 0 0 0 2vh;
+    font-size:20px;
+    font-weight:bold;
+    text-align:right;
+    float:left;
+    position:relative;
+    color:rgb(59, 59, 59);
+    }
+    .label input{
+        display: block;
+        float:left;
+        font-size:15px;
+        padding:4px 2px;
+        width: 100%;
+         margin: .9vw 0 ;
+        font-size: 20px;
+    } */
+    /* .loginpage button{
+        border: 1px solid;
+        font-size: 20px;
+        font-weight: 600;
+        width: 17%;
+        height: 2rem;
+        color: rgb(0, 0, 0);
+        position: relative;
+    /* right:    0; */
+    /* bottom:   0; */
+        /* margin-right: 0px; */
+        /* font-family: Arial, Helvetica, sans-serif;
+        overflow:auto;
+        justify-content: flex-end;
+    } */ 
+    .loginpage button:hover{
+        color:rgb(0, 0, 0);
+        box-shadow: rgb(0, 0, 0);
+    }
