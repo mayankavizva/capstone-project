@@ -85,7 +85,7 @@ const HomeComponent = () => {
           </button>
         </div>
         <Typography variant="h4" className={classes.industryHeading}>
-          {`Industry Specific Coverage
+          {`Services We Offer
             `}
         </Typography>
         <ImgMediaCard />

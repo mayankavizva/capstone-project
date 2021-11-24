@@ -33,13 +33,12 @@ export default function Navbar() {
       <div className="left-box">
         <ul>
           <li>
-          <Typography variant="body1"> 
+          <Typography variant="body2"> 
             <Link to="/home">
               EZInsure
             </Link>
             </Typography>
             </li>
-
           <li>
             <a href="#">
             </a>
@@ -51,7 +50,7 @@ export default function Navbar() {
               onClick={handleClick}
             >
               {' '}
-              ABOUT US{' '}
+              About Us{' '}
             </Button>
             <Menu
               id="fade-menu"

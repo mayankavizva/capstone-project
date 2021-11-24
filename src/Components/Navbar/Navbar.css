@@ -44,7 +44,6 @@
   padding-right: 40px;
   text-transform: uppercase;
 }
-
 .navbar ul li {
   height: 5%;
   display: inline-block;
@@ -58,10 +57,9 @@
 }
 #fade-button {
   font-size: 17px;
-  font-weight: 550;
+  font-weight: 400;
   color: rgb(8, 6, 6);
   cursor: pointer;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .navbar ul li:hover {
   cursor: pointer;
