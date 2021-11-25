@@ -1,0 +1,1 @@
+alert("welcome to MINSURANCE Home Page");
