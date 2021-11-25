@@ -1,8 +1,8 @@
 import React from 'react'
-
-export const Vision = () => {
+import "./aboutus.css" 
+ export const Vision = () => {
     return (
-        <div>
+        <div className="visionblock">
             <h1>Who we are</h1>
             <p>Team of people who risk, learn, and grow together, in the name of progress. We come to work each day looking at everything through the lens of "How can we make this better?" Easyinsure has helped individual and institutional customers grow and protect their wealth. We are known for delivering on our promises to our customers, and are recognized as one of the most admired companies. </p>
             <p>We are one of the leading private sector general insurance company in India offering insurance coverage for motor, health, travel, home, student travel and more. Policies can be purchased and renewed online as well. Immediate issuance of policy copy online.</p>

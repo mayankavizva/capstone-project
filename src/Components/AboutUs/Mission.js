@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Mission = () => {
     return (
-        <div>
+        <div className="missionblock">
             <h1>Mission</h1>
             <p>To help our customers achieve financial prosperity and peace of mind.</p>
             
