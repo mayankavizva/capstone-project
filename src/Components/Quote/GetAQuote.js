@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-import Button from '@mui/material/Button';
 import "./GetAQuote.css";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import { shadows } from '@mui/system';
 import ProgressMobileStepper from './progressbar';
 
 const GetAQuote = ({ handleNext,handleBack}) => {
@@ -45,13 +42,13 @@ const GetAQuote = ({ handleNext,handleBack}) => {
         setFlagFour(true);
         // handleNext();
     }
-    const bull = (
-        <Box
-            component="span"
-            sx={{ display: 'inline-block', transform: 'scale(1.0)' }}
-        >
-        </Box>
-    );
+    // const bull = (
+    //     <Box
+    //         component="span"
+    //         sx={{ display: 'inline-block', transform: 'scale(1.0)' }}
+    //     >
+    //     </Box>
+    // );
 
     const card = (
         <React.Fragment>

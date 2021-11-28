@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css'
-import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
 import '../Components/MainComponent.css'
 import HomeComponent from '../Components/HomeComponent'
@@ -9,11 +8,12 @@ import ContactUs from './ContactUs'
 import GetAQuote from './Quote/GetAQuote'
 import LoginPage from './LoginRegistrationPage/LoginPage'
 import RegistrationPage from './LoginRegistrationPage/RegistrationPage'
+import Navbar22 from './Navbar/Navbar'
 
 function Component() {
   return (
     <Router>
-      <Navbar />
+      <Navbar22 />
       <Switch>
         <Route exact path="/contactus" component={ContactUs} />
       </Switch>
