@@ -12,6 +12,7 @@ import RegistrationPage from './LoginRegistrationPage/RegistrationPage'
 import { Mission } from './AboutUs/Mission'
 import { Vision } from './AboutUs/Vision'
 import { Workculture } from './AboutUs/Workculture'
+import { PremiumSummary } from './PremiumSummary'
 
 function Component() {
   return (
@@ -40,6 +41,9 @@ function Component() {
       </Switch>
       <Switch>
         <Route exact path="/workculture" component={Workculture} /> 
+      </Switch>
+      <Switch>
+        <Route exact path="/premiumsummary" component={PremiumSummary} /> 
       </Switch>
       <Footer />
     </Router>

@@ -68,19 +68,26 @@ export default function Navbar() {
             </Menu>
           </li>
           <li>
-          <Typography variant="body1"> 
-            <Link to="/home">
-              Services
-            </Link>
+            <Typography variant="body1"> 
+              <Link to="/home">
+                Services
+              </Link>
             </Typography>
-            </li>
-            <li>
-          <Typography variant="body1"> 
-            <Link to="/Contactus">
-              Contact
-            </Link>
+          </li>
+          <li>
+            <Typography variant="body1"> 
+              <Link to="/premiumsummary">
+                Premium Summary
+              </Link>
             </Typography>
-            </li>
+          </li>
+          <li>
+            <Typography variant="body1"> 
+              <Link to="/Contactus">
+                Contact
+              </Link>
+            </Typography>
+          </li>
         </ul>
       </div>
       <div className="login_box">
