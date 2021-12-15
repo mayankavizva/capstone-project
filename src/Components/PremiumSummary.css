@@ -22,3 +22,11 @@ tr{
 td{
     text-align: center;
 }
+#btn{
+    
+    position: relative;
+    left: 78%;
+    font-size: 16px;
+    padding: 15px 32px;
+    cursor: pointer;
+}

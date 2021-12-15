@@ -4,7 +4,8 @@ import "./PremiumSummary.css"
 export const PremiumSummary = () => {
     return (
         <div>
-            <h1>Premium Summary</h1><br/>
+            <h1>Premium Summary</h1>
+            <button id="btn">View Premium Sheet</button>
             <h2>Policy Start Date : 01/01/2021</h2>
             <h2>Policy End Date   : 01/01/2022</h2>
             <table >
@@ -16,7 +17,7 @@ export const PremiumSummary = () => {
                 </tr>
                 <tr>
                     <td>101</td>
-                    <td>Computers,Desktop,Monitors</td>
+                    <td>Cars,Bikes,Scooters</td>
                     <td>120000 INR</td>
                     <td>10000 INR(per anum)</td>
                 </tr>
@@ -32,21 +33,21 @@ export const PremiumSummary = () => {
                 </tr>
                 <tr>
                     <td>101</td>
-                    <td>Computer</td>
+                    <td>Cars</td>
                     <td>200</td>
                     <td>01/01/2021</td>
                     <td>120000 INR</td>
                 </tr>
                 <tr>
                     <td>101</td>
-                    <td>Monitor</td>
+                    <td>Bikes</td>
                     <td>100</td>
                     <td>01/02/2021</td>
                     <td>116000 INR</td>
                 </tr>
                 <tr>
                     <td>101</td>
-                    <td>Desktop</td>
+                    <td>Scooters</td>
                     <td>200</td>
                     <td>01/03/2021</td>
                     <td>130500 INR</td>
