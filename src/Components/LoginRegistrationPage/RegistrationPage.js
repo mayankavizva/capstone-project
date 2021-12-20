@@ -43,7 +43,6 @@ const initialState = {
 
 const beforeSubmitCheck = (dataObj) => {
   // console.log(Object.values(dataObj).every((field) => field === ""));
-
   return Object.values(dataObj).every((field) => field === "");
 };
 
@@ -176,7 +175,7 @@ const RegistrationPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
-        <CssBaseline />
+        {/* <CssBaseline /> */}
         <Grid
           item
           xs={false}
@@ -214,20 +213,20 @@ const RegistrationPage = () => {
             >
               <Grid container spacing={2} padding={2}>
                 <Grid item xs={12} sm={6} >
-                  <TextField
-                    autoComplete="fname"
-                    name="firstName"
-                    required
-                    fullWidth
-                    id="firstName"
-                    label="First Name"
-                    autoFocus
-                    defaultValue={inputData.firstName}
-                    onChange={handleChange}
-                    InputProps={{}}
-                    helperText={errorData.firstName}
-                    error={errorData.firstName !== ""}
-                  />
+                <TextField
+                autoComplete="fname"
+                name="firstName"
+                required
+                fullWidth
+                id="firstName"
+                label="First Name"
+                autoFocus
+                defaultValue={inputData.firstName}
+                onChange={handleChange}
+                InputProps={{}}
+                helperText={errorData.firstName}
+                error={errorData.firstName !== ""}
+                variant="standard" />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
@@ -241,6 +240,7 @@ const RegistrationPage = () => {
                     onChange={handleChange}
                     helperText={errorData.lastName}
                     error={errorData.lastName !== ""}
+                    variant="standard" 
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -255,6 +255,7 @@ const RegistrationPage = () => {
                     onChange={handleChange}
                     helperText={errorData.number}
                     error={errorData.number !== ""}
+                    variant="standard" 
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -269,6 +270,7 @@ const RegistrationPage = () => {
                     onChange={handleChange}
                     error={errorData.email !== ""}
                     helperText={errorData.email}
+                    variant="standard" 
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -282,6 +284,7 @@ const RegistrationPage = () => {
                     autoComplete="new-password"
                     defaultValue={inputData.password}
                     onChange={handleChange}
+                    variant="standard" 
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position="end">
@@ -314,6 +317,7 @@ const RegistrationPage = () => {
                     autoComplete="new-password"
                     defaultValue={inputData.cnfPassword}
                     onChange={handleChange}
+                    variant="standard" 
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position="end">

@@ -4,10 +4,14 @@ import { useHistory } from 'react-router-dom'
 import '../Components/HomeComponent.css'
 import { Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
-
 const useStyles = makeStyles((theme) => ({
+  headerez: {
+    fontSize: 50 ,
+    fontWeight:700,
+    
+  },
   contentSubheading: {
-    fontWeight: 900,
+    fontSize:45,
   },
   bannerContainer: {
     display: 'flex',
@@ -36,18 +40,27 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const HomeComponent = () => {
-  let history = useHistory()
-  const classes = useStyles()
+  let history = useHistory();
+  const classes = useStyles();
+  const TypingComponentStyles = {
+    fontSize: "70%",
+    top: "65%",
+    position: "fixed",
+    width: "70%",
+    left: "15%"
+  }
+  const textArrayOne = ["EZ Insure"];
+  const textArrayTwo = ["Radically Simple"];
   return (
     <div className="div_outer">
       <div className="inner_content">
         <div className={classes.bannerContainer}>
           <div>
-            <Typography variant={`h2`}>{`EZInsure`}</Typography>
-            <Typography
-              variant={`h2`}
-              className={classes.contentSubheading}
-            >{`Radically Simple`}</Typography>
+            {/* <Typography variant='h1'  className={classes.headerez}>{`EZInsure`}</Typography>
+            <Typography variant='h1' className={classes.contentSubheading}>{`Radically Simple`}</Typography> */}
+            <p className={classes.headerez}>{`EZInsure`}</p>
+            <p className={classes.contentSubheading}>{`Radically Simple`}</p>
+
             <div className="list">
               <ul>
                 <li>

@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+.header22{
+background-color: aquamarine;
+width: 100%;
+text-align: justify;
+}
+h3{
+    padding-left: 10px;
+}
+.header33{
+    background-color: aquamarine;
+    width: 100%;
+    text-align: start;
+}
+table,tr,th,td{
+    border: 0px solid black;
+
+}
+th{
+    text-align:left;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+tr{
+    height: 50px;
+
+}
+td{
+    text-align: left;
+}

@@ -4,7 +4,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-color: #f0d9ff; */
   background-color: #FCD2D1;
   backface-visibility: hidden;
 }
@@ -14,12 +13,6 @@
   background-color: #FCD2D1;
   padding: 20px 0;
 }
-/* .image img {
-  width: 400px;
-  height: 350px;
-  float: right;
-  border-radius: 50%;
-} */
 
 .list ul li {
   font-size: 20px;
@@ -36,19 +29,6 @@
   padding: 10px;
   border-radius: 50rem;
 }
-/* .logo{
-    display: flex;
-    justify-content: center;
-  }
-  .logo ol{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    width: 50%;
-    overflow: hidden;
-    align-self: flex-end;
-  } */
-
 .inner_content a {
   color: rgb(18, 172, 146);
 }

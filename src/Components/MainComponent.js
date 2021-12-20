@@ -9,7 +9,11 @@ import GetAQuote from './Quote/GetAQuote'
 import LoginPage from './LoginRegistrationPage/LoginPage'
 import RegistrationPage from './LoginRegistrationPage/RegistrationPage'
 import Navbar22 from './Navbar/Navbar'
-
+import PremiumSheet from './Quote/PremiumSheet';
+import { Mission } from './AboutUs/Mission'
+import { Vision } from './AboutUs/Vision'
+import { Workculture } from './AboutUs/Workculture'
+// import { PremiumSummary } from './PremiumSummary'
 function Component() {
   return (
     <Router>
@@ -21,6 +25,9 @@ function Component() {
         <Route exact path={['/home', '/']} component={HomeComponent} />
       </Switch>
       <Switch>
+        <Route exact path={'/Premiumsheet'} component={PremiumSheet} />
+      </Switch>
+      <Switch>
         <Route exact path="/login" component={LoginPage} />
       </Switch> 
       <Switch>
@@ -29,6 +36,18 @@ function Component() {
       <Switch>
         <Route exact path="/getaquote" component={GetAQuote} />
       </Switch>
+      <Switch>
+        <Route exact path='/mission' component={Mission} /> 
+      </Switch>
+      <Switch>
+        <Route exact path="/vision" component={Vision} /> 
+      </Switch>
+      <Switch>
+        <Route exact path="/workculture" component={Workculture} /> 
+      </Switch>
+      {/* <Switch>
+        <Route exact path="/premiumsummary" component={PremiumSummary} /> 
+      </Switch> */}
       <Footer />
     </Router>
   )

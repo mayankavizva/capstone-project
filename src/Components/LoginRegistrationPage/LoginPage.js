@@ -54,7 +54,7 @@ export default function LoginPage() {
   return (
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
-        <CssBaseline />
+        {/* <CssBaseline /> */}
         <Grid
           item
           xs={false}
@@ -87,25 +87,24 @@ export default function LoginPage() {
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
-                margin="normal"
-                required
-                fullWidth
                 id="email"
                 label="Email Address"
                 name="email"
                 autoComplete="email"
-                autoFocus
-              />
-              <TextField
+                autoFocusid="standard-basic" 
                 margin="normal"
+                required
+                fullWidth
+                variant="standard" />
+              <TextField id="password" 
+              margin="normal"
                 required
                 fullWidth
                 name="password"
                 label="Password"
                 type="password"
-                id="password"
                 autoComplete="current-password"
-              />
+                variant="standard" />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
