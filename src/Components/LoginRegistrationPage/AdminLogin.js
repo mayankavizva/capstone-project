@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react'
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -17,43 +17,43 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+    return (
+      <Typography variant="body2" color="text.secondary" align="center" {...props}>
+        {'Copyright © '}
+        <Link color="inherit" href="https://mui.com/">
+          Your Website
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+    );
+  }
+  
+  const theme = createTheme();
 
-const theme = createTheme();
-
-export default function LoginPage() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-  return (
-    <ThemeProvider theme={theme}>
+function AdminLogin() {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        // eslint-disable-next-line no-console
+        console.log({
+          email: data.get('email'),
+          password: data.get('password'),
+        });
+      };
+      const [open, setOpen] = React.useState(false);
+    
+      const handleClickOpen = () => {
+        setOpen(true);
+      };
+    
+      const handleClose = () => {
+        setOpen(false);
+      };
+    return (
+        <div>
+            <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
-        {/* <CssBaseline /> */}
         <Grid
           item
           xs={false}
@@ -82,7 +82,7 @@ export default function LoginPage() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              Admin Login
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
@@ -122,7 +122,7 @@ export default function LoginPage() {
                     Forgot Password?
                   </Button>
                   <Dialog open={open} onClose={handleClose}>
-                    <DialogTitle>Forgot Password?</DialogTitle>
+                    <DialogTitle>Forgot Password</DialogTitle>
                     <DialogContent>
                       <DialogContentText>
                         Enter your email address:
@@ -155,5 +155,8 @@ export default function LoginPage() {
         </Grid>
       </Grid>
     </ThemeProvider>
-  )
+        </div>
+    )
 }
+
+export default AdminLogin

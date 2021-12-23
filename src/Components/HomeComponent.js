@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
     background: 'url(images/insuranceMainImg.svg)',
     backgroundSize: '105% 100%',
     backgroundPosition: 'left',
-    width: 400,
-    height: 350,
+    width: 700,
+    height: 450,
     borderRadius: '50%',
   },
   quoteBtnContainer: {
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     margin: '10px 0px 50px 0px',
     '& button': {
-      width: 200,
+      width: 250,
     },
   },
   industryHeading: {

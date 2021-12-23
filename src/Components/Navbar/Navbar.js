@@ -13,19 +13,20 @@ export default function Navbar22() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="About Us" id="collasible-nav-dropdown">
-                <NavDropdown.Item id="d1" href="#">Mission</NavDropdown.Item>
-                <NavDropdown.Item id="d2" href="#">Vision</NavDropdown.Item>
-                <NavDropdown.Item id="d3" href="#">Work Culture</NavDropdown.Item>
+                <NavDropdown.Item id="d1" href="/mission">Mission</NavDropdown.Item>
+                <NavDropdown.Item id="d2" href="/vision">Vision</NavDropdown.Item>
+                <NavDropdown.Item id="d3" href="/workculture">Work Culture</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link  href="#" id="service-nav">Services</Nav.Link>
+              <Nav.Link href="/ServicePage" id="service-nav">Services</Nav.Link>
               <Nav.Link id="contact-nav" href="/Contactus" >Contact Us</Nav.Link>
-              <Nav.Link id="premium-nav" href="/Premiumsheet">Premium Sheet</Nav.Link>
+              {/* <Nav.Link id="premium-nav" href="/Premiumsheet">Premium Sheet</Nav.Link> */}
             </Nav>
             <Nav>
               <Nav.Link id="login-nav" href="/login">Login</Nav.Link>
               <Nav.Link id="signin-nav" eventKey={2} href="/signup">
                 SignUp
               </Nav.Link>
+              <Nav.Link id="admin-nav" href="/admin">Admin</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

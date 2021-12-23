@@ -9,11 +9,13 @@ import GetAQuote from './Quote/GetAQuote'
 import LoginPage from './LoginRegistrationPage/LoginPage'
 import RegistrationPage from './LoginRegistrationPage/RegistrationPage'
 import Navbar22 from './Navbar/Navbar'
-import PremiumSheet from './Quote/PremiumSheet';
-import { Mission } from './AboutUs/Mission'
-import { Vision } from './AboutUs/Vision'
-import { Workculture } from './AboutUs/Workculture'
-// import { PremiumSummary } from './PremiumSummary'
+// import PremiumSheet from './Quote/PremiumSheet';
+import Mission from './AboutUs/Mission';
+import Vision from './AboutUs/Vision';
+import Workculture from './AboutUs/Workculture';
+import AdminLogin from './LoginRegistrationPage/AdminLogin'
+import ServicePage from './ServicePage/ServicePage'
+
 function Component() {
   return (
     <Router>
@@ -24,11 +26,14 @@ function Component() {
       <Switch>
         <Route exact path={['/home', '/']} component={HomeComponent} />
       </Switch>
-      <Switch>
+      {/* <Switch>
         <Route exact path={'/Premiumsheet'} component={PremiumSheet} />
-      </Switch>
+      </Switch> */}
       <Switch>
         <Route exact path="/login" component={LoginPage} />
+      </Switch> 
+      <Switch>
+        <Route exact path="/admin" component={AdminLogin} />
       </Switch> 
       <Switch>
         <Route exact path="/signup" component={RegistrationPage} />
@@ -44,6 +49,9 @@ function Component() {
       </Switch>
       <Switch>
         <Route exact path="/workculture" component={Workculture} /> 
+      </Switch>
+      <Switch>
+        <Route exact path="/ServicePage" component={ServicePage} />
       </Switch>
       {/* <Switch>
         <Route exact path="/premiumsummary" component={PremiumSummary} /> 

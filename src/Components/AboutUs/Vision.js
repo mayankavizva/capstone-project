@@ -2,7 +2,7 @@ import React from 'react'
 import "./aboutus.css" 
 import vimg from './vision.jpeg'
 
- export const Vision = () => {
+const Vision = () => {
     return (
         <>
         <div className="visionblock">
@@ -19,10 +19,8 @@ import vimg from './vision.jpeg'
             </div>
             
         </div>
-        
-       
-        
         </>
         
-    )
+    );
 }
+export default Vision;

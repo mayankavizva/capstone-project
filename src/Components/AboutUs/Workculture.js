@@ -1,7 +1,7 @@
 import React from 'react'
 import './aboutus.css'
 import wimg from './worklogo.jpeg'
-export const Workculture = () => {
+const Workculture = () => {
     return (
         <>
         <div className="workblock">
@@ -22,5 +22,6 @@ export const Workculture = () => {
         </div>
         
         </>
-    )
+    );
 }
+export default Workculture;

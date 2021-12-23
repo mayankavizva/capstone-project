@@ -2,7 +2,7 @@ import React from 'react'
 import './aboutus.css'
 import mimg from './missionlogo.png'
 
-export const Mission = () => {
+const Mission = () => {
     return (
         <>
         <div className="missionblock">
@@ -23,5 +23,6 @@ export const Mission = () => {
             </div>
         </div>
         </>
-    )
+    );
 }
+export default Mission;
