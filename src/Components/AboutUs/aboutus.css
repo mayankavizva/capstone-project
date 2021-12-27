@@ -1,0 +1,78 @@
+.visionblock h1{
+    margin-left: 50px;
+    width: 50%;
+}
+.visionblock p{
+    margin-left: 50px;
+    width: 90%;
+    font-size:larger;
+}
+.vleft{
+    position: relative;
+    left: 20px;
+    top: 1px;
+    width: 54%;
+    display: inline-block;
+}
+.vright{
+    position:absolute;
+    right:10px;
+    top: 18px;
+    display: inline-block;
+}
+
+
+.missionblock h1{
+    margin-left: 50px;
+    width: 50%;
+}
+.missionblock p{
+    margin-left: 50px;
+    width: 85%;
+    font-size:larger;
+}
+.mleft{
+    position: relative;
+    left: 20px;
+    top: 1px;
+    width: 57%;
+    display: inline-block;
+}
+.mright{
+    position:absolute;
+    right:40px;
+    top: 186px;
+    display: inline-block;
+}
+.list{
+    margin-left: 50px;
+    width: 80%;
+    font-size:larger;
+}
+
+
+.workblock h1{
+    margin-left: 50px;
+    width: 50%;
+}
+.workblock p{
+    margin-left: 50px;
+    width: 90%;
+    font-size:larger;
+}
+.wleft{
+    position: relative;
+    left: 20px;
+    top: 1px;
+    width: 50%;
+    height: 10%;
+    display: inline-block;
+}
+.wright{
+    position:absolute;
+    right:40px;
+    top: 100px;
+    height: 75% ;
+    width: 45%;
+    display: inline-block;
+}
